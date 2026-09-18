@@ -1,0 +1,234 @@
+print("Cyrex Başlatılıyor...")
+print("______________________________________________________")
+while True:
+    print("\033[31m[-] Hesap Makinesi\033[0m")
+    print("\033[31m[-] Sözlük\033[0m")
+    print("\033[31m[-] Cyrex™ Hakkında\033[0m")
+    print("\033[31m[-] Çıkış\033[0m")
+    print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+    secim = input("Seçiminiz: ")
+    
+    if secim == '1':
+
+        while True: 
+            print("______________________________________________________")
+            s1 = int(input('1.Sayı: ')) 
+            s2 = int(input('2.Sayı: ')) 
+            op = input('işlem: ') 
+            if (op == '+'): 
+                S = s1 + s2 
+            elif (op == '-'): 
+                S = s1 - s2 
+            elif (op == '*'): 
+                S = s1 * s2 
+            elif (op == '/'): 
+                S = s1 / s2 
+            else: 
+               print("Hatalı Seçim Lütfen Dört İşlemden birini Seçin.") 
+            print("Sonuç =",S) 
+            cvp=input("\033[33mBaşka İşlem Olacakmı e/h ?\033[0m")
+            print("______________________________________________________")
+            if cvp=='h':
+                break
+            else: 
+                continue
+
+
+    elif secim == '2':
+        print("______________________________________________________")
+        print("Sözlüğe Hoş Geldiniz")
+        print("\033[31mSözlük Henüz Geliştirilme Sürecinde\033[0m")
+        print("______________________________________________________")
+        print("\033[33m[1] Astronomi Sözlüğü\033[0m")
+        print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+        secim2 = input("Sözlük Seçin: ")
+
+        if secim2 == '1':
+            isim = input("Aradığınız kelimenin baş harfini giriniz: ")
+            isim = isim.lower()
+
+            if isim.startswith("a"):
+                 print("______________________________________________________")
+                 print("Astronom: Astronomi bilimi ile ilgilenen bilim insanı.")
+                 print("Astronomi birimi (AB): Dünya ve Güneş merkezi arasındaki ortalama uzaklık.")
+                 print("Astronot: Uzay araçları ile uzaya giderek uzay çalışmalarına katkıda bulunan kişi.")
+                 print("Ayakucu: Gözlemcinin çevren düzlemi altında bulunan nokta (Nadir).")
+                 print("Azimut: Bir gök cisminden geçen düşey daire ile meridyen arasındaki açı.")
+                 print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+                 
+            elif isim.startswith("b"):
+                 print("______________________________________________________")
+                 print("Başucu: Gözlemcinin çevren düzlemi üstündeki nokta (Zenit).")
+                 print("Beyaz cüce: Soğuyarak ölü bir sona ilerleyen küçük yıldız.")
+                 print("Burçlar kuşağı: Tutulumun geçtiği ve on iki burcun bulunduğu kuşak")
+                 print("Büyük patlama: Evrenin sonsuz yoğunluktan genişlemeye başlaması.")
+                 print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+ 
+            elif isim.startswith("ç"):
+                 print("______________________________________________________")
+                 print("Çevren: Yer küresine teğet düzlemin gök küresi ile kesiti.")
+                 print("Çift yıldız: Ortak kütle merkezi etrafında dolanan iki yıldız.")
+                 print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+
+            elif isim.startswith("d"):
+                 print("______________________________________________________")
+                 print("Dış gezegenler: Yer yörüngesinin dışında kalan gezegenler.")
+                 print("Dış merkezlik: Koniklerin odağa olan uzaklık oranı.")
+                 print("Dik açıklık: Gök cisminin gök eşleğine açısal uzaklığı.")
+                 print("Doppler etkisi: Kaynağın hareketine bağlı frekans kayması.")
+                 print("Dönence: Güneş veya Ay’ın geri döndüğü daire.")
+                 print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+
+            elif isim.startswith("e"):
+                 print("______________________________________________________")
+                 print("Enberi noktası: Yörüngede odağa en yakın nokta.")
+                 print("Enöte noktası: Yörüngede odağa en uzak nokta.")
+                 print("Eşlek: Ekvator.")
+                 print("Evren: Tüm madde ve enerjiyi kapsayan uzay.")
+                 print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+
+            elif isim.startswith("g"):
+                 print("______________________________________________________")
+                 print("Gezegen: Güneş çevresinde dolanan gök cismi.")
+                 print("Gezegenimsi bulutsu: Kırmızı devin gaz kabuğu.")
+                 print("Gök ada: Milyonlarca yıldızdan oluşan sistem.")
+                 print("Gök eşleği: Yer eşleğinin gök küresiyle kesiti.")
+                 print("Gök uçlağı: Dünya ekseninin gök küresini deldiği nokta.")
+                 print("Greenwich: Başlangıç meridyeninin geçtiği yer.")
+                 print("Gün dönümü: Günlerin uzamaya ya da kısalmaya döndüğü tarih.")
+                 print("Güneş saati: Gölge ile zaman ölçen araç.")
+                 print("Güneş takvimi: Güneş hareketine dayalı takvim.")
+                 print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+
+            elif isim.startswith("h"):
+                 print("______________________________________________________")
+                 print("Hertzsprung-Russell Diyagramı: Yıldız sınıflandırma grafiği.")
+                 print("Hilal: Ay’ın ilk ve son evresi.")
+                 print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+
+            elif isim.startswith("i"):
+                 print("______________________________________________________")
+                 print("Ilım noktaları: Gece ve gündüzün eşit olduğu zamanlar.")
+                 print("Iraksım: İki doğrultu arasındaki açı.")
+                 print("Işık eğrisi: Parlaklığın zamana göre değişimi.")
+                 print("Işık yılı: Işığın bir yılda aldığı yol.")
+                 print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+
+            elif isim.startswith("j"):
+                 print("______________________________________________________")
+                 print("Julien takvimi: Julius Cesar tarafından düzenlenen takvim.")
+                 print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+
+            elif isim.startswith("k"):
+                 print("______________________________________________________")
+                 print("Kadir: Yıldız parlaklık ölçeği.")
+                 print("Kara cisim: Üzerine düşen tüm ışığı soğuran cisim.")
+                 print("Kara delik: Işığın bile kaçamadığı yoğun cisim.")
+                 print("Kış dönencesi: 22 Aralık’ta Güneş’in dönüş noktası.")
+                 print("Kon düzeneği: Koordinat sistemi.")
+                 print("Kozmolog: Kozmolojiyle uğraşan kişi.")
+                 print("Kozmoloji: Evreni inceleyen bilim.")
+                 print("Kuyruklu yıldız: Kuyruğu olan gök cismi.")
+                 print("Küçük gezegen: Asteroit.")
+                 print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+
+            elif isim.startswith("m"):
+                 print("______________________________________________________")
+                 print("Miladi tarih: Hz. İsa’yı başlangıç alan takvim.")
+                 print("Mor ötesi: Mor ışıktan kısa dalga boyu.")
+                 print("Mutlak parlaklık: 10 parsekteki parlaklık.")
+                 print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+
+            elif isim.startswith("n"):
+                 print("______________________________________________________")
+                 print("Nadir: Ayakucu.")
+                 print("Nötron yıldızı: Çok yoğun, küçük yıldız kalıntısı.")
+                 print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+
+            elif isim.startswith("o"):
+                 print("______________________________________________________")
+                 print("Ortalama güneş günü: 86400 saniye.")
+                 print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+
+            elif isim.startswith("ö"):
+                 print("______________________________________________________")
+                 print("Örten çift yıldız: Birbirini örten yıldız sistemi.")
+                 print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+
+            elif isim.startswith("p"):
+                 print("______________________________________________________")
+                 print("Parçalı ay tutulması: Ay’ın bir kısmının kararması.")
+                 print("Parçalı güneş tutulması: Güneş’in bir kısmının örtülmesi.")
+                 print("Parlaklık: Işığın gözde oluşturduğu etki.")
+                 print("Parsek: Astronomik uzaklık birimi.")
+                 print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+
+            elif isim.startswith("r"):
+                 print("______________________________________________________")
+                 print("Radyo astronomi: Radyo dalgalarıyla astronomi.")
+                 print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+
+            elif isim.startswith("s"):
+                 print("______________________________________________________")
+                 print("Saat dairesi: Kutup ve yıldızdan geçen daire.")
+                 print("Sağ açıklık: Yıldızın konum açısı.")
+                 print("Süper nova: Patlayan yıldız.")
+                 print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+
+            elif isim.startswith("t"):
+                 print("______________________________________________________")
+                 print("Tam tutulma: Gök cisminin tamamen örtülmesi.")
+                 print("Tan olayı: Güneş ufkun altındayken gökyüzünün aydınlanması.")
+                 print("Tayf: Işığın dalga boylarına ayrılması.")
+                 print("Tutulum: Güneş’in gökte çizdiği yol.")
+                 print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+
+            elif isim.startswith("u"):
+                 print("______________________________________________________")
+                 print("Usturlab: Eski gözlem aracı.")
+                 print("Uydu: Gezegen çevresinde dolanan cisim.")
+                 print("Uzay: Gök cisimlerinin bulunduğu boşluk.")
+                 print("Uzay gemisi: Dünya dışına çıkan araç.")
+                 print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+
+            elif isim.startswith("ü"):
+                 print("______________________________________________________")
+                 print("Üst geçiş: Yıldızın en yüksek konumu.")
+                 print("Üst kavuşum: İç gezegen hizalanması.")
+                 print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+
+            elif isim.startswith("y"):
+                 print("______________________________________________________")
+                 print("Yapma uydu: İnsan yapımı uydu.")
+                 print("Yaz dönencesi: 21 Haziran dönüş noktası.")
+                 print("Yer eşleği: Dünya ekvatoru.")
+                 print("Yıldız: Işık saçan gök cismi.")
+                 print("Yıldızlar arası madde: Gaz ve toz.")
+                 print("Yoldaş yıldız: Küçük kütleli bileşen.")
+                 print("Yörünge: Gök cisminin izlediği yol.")
+                 print("Yükseklik: Çevren düzlemine göre açı.")
+                 print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+
+            else:
+                 print("______________________________________________________")
+                 print("Bu Harfle Başlayan Terim Bulunamadı.")
+                 print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+            
+
+    elif secim == '3':
+        print("______________________________________________________")
+        print("Sürüm: Cyrex Python Edition 1.71")
+        print("Technovation ©2026 Tüm Hakları Gizlidir. Licensed By MIT.")
+        print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+
+    elif secim == '0':
+
+        print("Cyrex Kapatılıyor...")
+        break
+
+    else:
+        print(" ")
+        print("Seçiminiz Hatalı Lütfen 0,1,2,3 veya 4'ü Seçiniz.")
+        print("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯")
+        continue
+
